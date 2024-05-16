@@ -1,10 +1,15 @@
-def rGcd(m, n):
-    if m % n == 0:
-        return n
-    else:
-        print(n, m % n)
-        gcd = rGcd(n, m % n)
-        return gcd
-    
-a = rGcd(2002, 1344)
-print(a)
+#%%
+try:
+    int("N/A")
+except ValueError as e:
+    print("Failed:", e)
+
+#%%
+
+try:
+    input("test:")
+except TypeError as e:
+    print("Failed:", e)
+except ValueError as e:
+    print("Failed:", e)
+# %%
